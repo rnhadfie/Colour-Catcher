@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.AchorPane {
+       // -fx-background-fills: linear-gradient(to bottom right,red,blueviolet,red);
+        -fx-background-color: red;
+}
+.AchorPane:hover {
+        -fx-background-fills: linear-gradient(to bottom right,blueviolet,red,blueviolet);
+
+}
+.theme {
+	 -fx-background-color: linear-gradient(to bottom right, red,lavender,red)
+}
+.grid
+{
+	-fx-border-style: solid;
+    	-fx-border-width: 3;
+    	-fx-border-color: linear-gradient(to bottom right, red,lavender,red);
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#D81919, #F51818);
+}

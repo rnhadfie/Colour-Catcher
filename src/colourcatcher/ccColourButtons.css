@@ -1,0 +1,405 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.button:hover
+{
+    -fx-border-color: black;
+        
+}
+.progress-bar
+{
+   -fx-border-color: black;
+   -fx-background-color: linear-gradient(green, yellow,red);
+}
+
+
+.norm1
+{
+    -fx-background-color: #ccffee
+        
+}
+.off1
+{
+    -fx-background-color: #ccffcc
+}
+.norm2
+{
+    -fx-background-color: #ccffff
+        
+}
+.off2
+{
+    -fx-background-color: #99ffff
+}
+.norm3
+{
+    -fx-background-color: #9900cc
+        
+}
+.off3
+{
+    -fx-background-color: #990099
+}
+
+
+
+.norm4
+{
+    -fx-background-color: #9900cc
+        
+}
+.off4
+{
+    -fx-background-color: #990099
+}
+
+.norm5
+{
+    -fx-background-color: #999900
+        
+}
+.off5
+{
+    -fx-background-color: #cccc00
+}
+
+.norm6
+{
+    -fx-background-color: #66ff66
+        
+}
+.off6
+{
+    -fx-background-color: #99ff99
+}
+.norm7
+{
+    -fx-background-color: #ff0000
+        
+}
+.off7
+{
+    -fx-background-color: #ff3333
+}
+.norm8
+{
+    -fx-background-color: #ffff33
+        
+}
+.off8
+{
+    -fx-background-color: #ffff99
+}
+.norm9
+{
+    -fx-background-color: #ffffff
+        
+}
+.off9
+{
+    -fx-background-color: #ffffdd
+}
+.norm10
+{
+    -fx-background-color: #6666ff
+        
+}
+.off10
+{
+    -fx-background-color: #3366ff
+}
+.norm11
+{
+    -fx-background-color: #006666
+        
+}
+.off11
+{
+    -fx-background-color: #004466
+}
+.norm12
+{
+    -fx-background-color: #cc11ff
+        
+}
+.off12
+{
+    -fx-background-color: #aa11ff
+}
+.norm13
+{
+    -fx-background-color: #9922bb
+        
+}
+.off13
+{
+    -fx-background-color: #992299
+}
+.norm14
+{
+    -fx-background-color: #99aabb
+        
+}
+.off14
+{
+    -fx-background-color: #99aa99
+}
+
+.norm15
+{
+    -fx-background-color: #99aa00
+        
+}
+.off15
+{
+    -fx-background-color: #aaaa00
+}
+
+.norm16
+{
+    -fx-background-color: #33ff33
+        
+}
+.off16
+{
+    -fx-background-color: #66ff66
+}
+.norm17
+{
+    -fx-background-color: #ff0095
+        
+}
+.off17
+{
+    -fx-background-color: #ff3395
+}
+.norm18
+{
+    -fx-background-color: #113333
+        
+}
+.off18
+{
+    -fx-background-color: #11ff99
+}
+.norm19
+{
+    -fx-background-color: #f13fff
+        
+}
+.off19
+{
+    -fx-background-color: #f12ff9
+}
+.norm20
+{
+    -fx-background-color: #9911cc
+        
+}
+.off20
+{
+    -fx-background-color: #991199
+}
+
+.off21
+{
+    -fx-background-color: #ccffee
+        
+}
+.norm21
+{
+    -fx-background-color: #ccffcc
+}
+.off22
+{
+    -fx-background-color: #ccffff
+        
+}
+.norm22
+{
+    -fx-background-color: #99ffff
+}
+.off23
+{
+    -fx-background-color: #9900cc
+        
+}
+.norm23
+{
+    -fx-background-color: #990099
+}
+
+
+
+.off24
+{
+    -fx-background-color: #9900cc
+        
+}
+.norm24
+{
+    -fx-background-color: #990099
+}
+
+.off25
+{
+    -fx-background-color: #999900
+        
+}
+.norm25
+{
+    -fx-background-color: #cccc00
+}
+
+.off26
+{
+    -fx-background-color: #66ff66
+        
+}
+.norm26
+{
+    -fx-background-color: #99ff99
+}
+.off27
+{
+    -fx-background-color: #ff0000
+        
+}
+.norm27
+{
+    -fx-background-color: #ff3333
+}
+.off28
+{
+    -fx-background-color: #ffff33
+        
+}
+.norm28
+{
+    -fx-background-color: #ffff99
+}
+.off29
+{
+    -fx-background-color: #ffffff
+        
+}
+.norm29
+{
+    -fx-background-color: #ffffdd
+}
+.off30
+{
+    -fx-background-color: #6666ff
+        
+}
+.norm30
+{
+    -fx-background-color: #3366ff
+}
+.off31
+{
+    -fx-background-color: #006666
+        
+}
+.norm31
+{
+    -fx-background-color: #004466
+}
+.off32
+{
+    -fx-background-color: #cc11ff
+        
+}
+.norm32
+{
+    -fx-background-color: #aa11ff
+}
+.off33
+{
+    -fx-background-color: #9922bb
+        
+}
+.norm33
+{
+    -fx-background-color: #992299
+}
+.off34
+{
+    -fx-background-color: #99aabb
+        
+}
+.norm34
+{
+    -fx-background-color: #99aa99
+}
+
+.off35
+{
+    -fx-background-color: #99aa00
+        
+}
+.norm35
+{
+    -fx-background-color: #aaaa00
+}
+
+.off36
+{
+    -fx-background-color: #33ff33
+        
+}
+.norm36
+{
+    -fx-background-color: #66ff66
+}
+.off37
+{
+    -fx-background-color: #ff0095
+        
+}
+.norm37
+{
+    -fx-background-color: #ff3395
+}
+.off38
+{
+    -fx-background-color: #113333
+        
+}
+.norm38
+{
+    -fx-background-color: #11ff99
+}
+.off39
+{
+    -fx-background-color: #f13fff
+        
+}
+.norm39
+{
+    -fx-background-color: #f12ff9
+}
+.off40
+{
+    -fx-background-color: #9911cc
+        
+}
+.norm40
+{
+    -fx-background-color: #991199
+}
+
+.off0
+{
+    -fx-background-color: #000000
+        
+}
+.norm0
+{
+    -fx-background-color: #000011
+}

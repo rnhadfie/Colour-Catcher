@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPane" blendMode="SRC_OVER" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colourcatcher.CCMenuController">
+  <children>
+    <Label layoutX="113.0" layoutY="47.0" text="Colour Catcher" textFill="#8f00ff">
+      <effect>
+        <Glow>
+          <input>
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.10317460317460317" color="#fff555" height="95.72284226190476" radius="47.400948660714285" width="95.88095238095238" />
+          </input>
+        </Glow>
+      </effect>
+      <font>
+        <Font name="Cooper Black" size="48.0" />
+      </font>
+    </Label>
+    <GridPane id="grid" layoutX="104.0" layoutY="144.0" prefHeight="195.0" styleClass="grid">
+      <children>
+        <Button fx:id="te" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#teButtonAction" prefHeight="26.0" prefWidth="100.0" text="Easy" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button fx:id="tm" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#tmButtonAction" prefHeight="26.0" prefWidth="100.0" text="Medium" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button fx:id="th" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#thButtonAction" prefHeight="26.0" prefWidth="100.0" text="Hard" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="100.0" text="Timed" textFill="#66edff" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Label>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@ccmenu.css" />
+      </stylesheets>
+    </GridPane>
+    <GridPane id="grid" layoutX="368.0" layoutY="144.0" prefHeight="194.9998779296875" styleClass="grid">
+      <children>
+        <Button fx:id="se" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#seButtonAction" prefHeight="26.0" prefWidth="100.0" text="Easy" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button fx:id="sm" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#smButtonAction" prefHeight="26.0" prefWidth="100.0" text="Medium" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button id="sm" fx:id="sh" blendMode="HARD_LIGHT" mnemonicParsing="false" onAction="#shButtonAction" prefHeight="26.0" prefWidth="100.0" text="Hard" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" prefHeight="26.0" prefWidth="100.0" text="Surival" textFill="#33ffe7" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@ccmenu.css" />
+      </stylesheets>
+    </GridPane>
+  </children>
+</AnchorPane>
