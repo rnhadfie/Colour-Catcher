@@ -10,13 +10,13 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="AnchorPane" blendMode="SRC_OVER" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colourcatcher.CCMenuController">
+<AnchorPane fx:id="AnchorPane" blendMode="SRC_OVER" prefHeight="400.0" prefWidth="600.0" styleClass="AchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="colourcatcher.CCMenuController">
   <children>
     <Label layoutX="113.0" layoutY="47.0" text="Colour Catcher" textFill="#8f00ff">
       <effect>
         <Glow>
           <input>
-            <InnerShadow blurType="TWO_PASS_BOX" choke="0.10317460317460317" color="#fff555" height="95.72284226190476" radius="47.400948660714285" width="95.88095238095238" />
+            <InnerShadow blurType="TWO_PASS_BOX" choke="0.10317460317460317" color="#fff555" height="95.80189732142857" radius="47.42071242559524" width="95.88095238095238" />
           </input>
         </Glow>
       </effect>
@@ -69,4 +69,7 @@
       </stylesheets>
     </GridPane>
   </children>
+  <stylesheets>
+    <URL value="@ccmenu.css" />
+  </stylesheets>
 </AnchorPane>

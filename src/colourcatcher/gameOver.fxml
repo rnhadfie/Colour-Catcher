@@ -10,7 +10,7 @@
 <?import javafx.scene.text.*?>
 <?scenebuilder-background-color radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 200.0px 200.0px, radius 350.0px, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0xffff00ff 50.0%, 0xffa500ff 70.0%, 0x000000ff 100.0%)?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="colourcatcher.GameOverController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="AchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="colourcatcher.GameOverController">
   <children>
     <Label alignment="CENTER" layoutX="165.0" layoutY="69.0" prefWidth="270.0" text="Score" textFill="WHITE">
       <font>
@@ -49,4 +49,7 @@
       </light>
     </Lighting>
   </effect>
+  <stylesheets>
+    <URL value="@ccmenu.css" />
+  </stylesheets>
 </AnchorPane>

@@ -3,12 +3,17 @@
  */
 
 .AchorPane {
-       // -fx-background-fills: linear-gradient(to bottom right,red,blueviolet,red);
-        -fx-background-color: red;
+      -fx-background-color: linear-gradient(to bottom right,yellow, orange,red,blueviolet,black,blueviolet,red, orange,yellow);
+        
 }
 .AchorPane:hover {
-        -fx-background-fills: linear-gradient(to bottom right,blueviolet,red,blueviolet);
-
+        //-fx-background-color: linear-gradient(to bottom right,yellow,orangered,red,black);
+        -fx-background-color: radial-gradient(center 100px 100px, 
+radius 200px, 
+yellow  0%, 
+orange 20%, 
+red 60%,
+black 100%);
 }
 .theme {
 	 -fx-background-color: linear-gradient(to bottom right, red,lavender,red)
