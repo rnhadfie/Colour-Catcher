@@ -35,8 +35,9 @@ public class GameOverController implements Initializable {
      * Initializes the controller class.
      */
     
-            
-    Label score;
+    @FXML       
+    private Label score;
+    String sc="";
     @FXML
     private void ButtonEventMenu(ActionEvent event) {
         
@@ -57,7 +58,7 @@ public class GameOverController implements Initializable {
     private void ButtonEventTry(ActionEvent event) {
         
         try {
-            Parent game_page = FXMLLoader.load(getClass().getResource("CCMenu.fxml"));
+            Parent game_page = FXMLLoader.load(getClass().getResource(sc));
             Scene scene = new Scene(game_page);
             Stage stage;
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -71,8 +72,13 @@ public class GameOverController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       
-       
+       Model m=new Model();
+       //System.out.println(m.getInstance().currentCountry().getScore());
+       int i=m.getInstance().currentCountry().getScore();
+       String k=String.valueOf(i);
+       score.setText(k);
+       sc=m.getInstance().currentCountry().getSceneName();
+     
     }     
     
 }

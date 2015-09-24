@@ -5,6 +5,7 @@
  */
 package colourcatcher;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,6 +18,8 @@ import javafx.scene.Parent;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 /**
  *
@@ -24,17 +27,17 @@ import javafx.stage.Stage;
  */
 public class CCMenuController implements Initializable {
     
-  
-    
+    private static File soundFile=new File("C:\\Users\\rhianne\\Documents\\Apps\\ColourCatcher\\src\\colourcatcher\\Countdown.wav");
+     Model m=new Model();
     
     @FXML
     private void teButtonAction(ActionEvent event) {
           try {
             Parent game_page=FXMLLoader.load(getClass().getResource("CCTimedE.fxml"));
-           Scene scene = new Scene(game_page);
+            Scene scene = new Scene(game_page);
             Stage stage;
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-           stage.setScene(scene);
+            stage.setScene(scene);
             stage.show();
         } catch (IOException ex) {
            System.out.println("Error");
@@ -44,12 +47,12 @@ public class CCMenuController implements Initializable {
     }
      @FXML
     private void tmButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
+       
         
     }
      @FXML
     private void thButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
+       
         
     }
      @FXML

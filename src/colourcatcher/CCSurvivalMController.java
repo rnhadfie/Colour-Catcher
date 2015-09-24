@@ -5,6 +5,7 @@
  */
 package colourcatcher;
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
@@ -22,7 +23,7 @@ import javafx.stage.*;
  * @author rhianne
  */
 public class CCSurvivalMController implements Initializable {
-
+    Model m=new Model();
     @FXML
     private Label life;
     @FXML
@@ -42,13 +43,13 @@ public class CCSurvivalMController implements Initializable {
         if (!b.getId().equalsIgnoreCase("b" + String.valueOf(off[0]) + String.valueOf(off[1]))) {
             String s = life.getText();
             int i = Integer.valueOf(s);
-            //int i=Integer.getInteger(life.getText());
+            m.getInstance().currentCountry().setScore(scoreVal);
             i = i - 1;
             if (i > 0) {
                 life.setText(String.valueOf(i));
             } else {
                 try {
-                    Parent game_page = FXMLLoader.load(getClass().getResource("CCMenu.fxml"));
+                    Parent game_page = FXMLLoader.load(getClass().getResource("gameOver.fxml"));
                     Scene scene = new Scene(game_page);
                     Stage stage;
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -112,6 +113,8 @@ public class CCSurvivalMController implements Initializable {
         buttons[2][1] = b21;
         buttons[2][2] = b22;
 
+        m.getInstance().currentCountry().setSceneName("CCSurvivalM.fxml");
+        System.out.println( m.getInstance().currentCountry().getSceneName());
     }
 
 }

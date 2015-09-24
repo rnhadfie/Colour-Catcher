@@ -20,7 +20,7 @@
         <URL value="@ccmenu.css" />
       </stylesheets>
     </Label>
-    <Label id="score" alignment="CENTER" layoutX="93.0" layoutY="144.0" prefHeight="153.0" prefWidth="430.0" text="" textFill="WHITE">
+    <Label fx:id="score" alignment="CENTER" layoutX="93.0" layoutY="144.0" prefHeight="153.0" prefWidth="430.0" text="0" textFill="WHITE">
       <font>
         <Font name="Castellar" size="50.0" />
       </font>

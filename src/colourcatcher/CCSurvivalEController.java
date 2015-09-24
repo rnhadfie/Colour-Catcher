@@ -38,7 +38,7 @@ public class CCSurvivalEController implements Initializable {
      * Initializes the controller class.
      */
 
-   
+   Model m=new Model();
     
     @FXML
     private void ButtonEvent(ActionEvent event) {
@@ -54,6 +54,7 @@ public class CCSurvivalEController implements Initializable {
             life.setText(String.valueOf(i));
             else
             {
+                m.getInstance().currentCountry().setScore(scoreVal);
                 try {
                     Parent game_page=FXMLLoader.load(getClass().getResource("gameOver.fxml"));
                     Scene scene = new Scene(game_page);
@@ -73,10 +74,8 @@ public class CCSurvivalEController implements Initializable {
             int j=r.nextInt(2);
             int base=colour.nextInt(20)+1;
             
-            System.out.println(i+" "+j);
-            
-            System.out.println("Correct");
-             scoreVal++;
+           
+            scoreVal++;
             for(int n=0; n<2; n++)
             {
                 for(int m=0; m<2; m++)
@@ -115,17 +114,9 @@ public class CCSurvivalEController implements Initializable {
       buttons[1][0]=b10;
       buttons[1][1]=b11;
  
-     
-     
+     m.getInstance().currentCountry().setSceneName("CCSurvivalE.fxml");
+     System.out.println( m.getInstance().currentCountry().getSceneName());
+    
     }    
     
-    
-    public int getGameScore()
-    {
-        return scoreVal;
-    }
-    public String getGameScence()
-    {
-        return gameScreen;
-    }
 }

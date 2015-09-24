@@ -26,7 +26,7 @@ import javafx.stage.Stage;
  * @author rhianne
  */
 public class CCSurvivalHController implements Initializable {
-
+    Model m=new Model();
     @FXML
     private Label life;
     @FXML
@@ -56,13 +56,14 @@ public class CCSurvivalHController implements Initializable {
             String s=life.getText();
             int i=Integer.valueOf(s);
             //int i=Integer.getInteger(life.getText());
+            m.getInstance().currentCountry().setScore(scoreVal);
             i=i-1;
             if(i>0)
             life.setText(String.valueOf(i));
             else
             {
                 try {
-                    Parent game_page=FXMLLoader.load(getClass().getResource("CCMenu.fxml"));
+                    Parent game_page=FXMLLoader.load(getClass().getResource("gameOver.fxml"));
                     Scene scene = new Scene(game_page);
                     Stage stage;
                     stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -126,7 +127,8 @@ public class CCSurvivalHController implements Initializable {
       buttons[2][0]=b20; buttons[2][1]=b21; buttons[2][2]=b22; buttons[2][3]=b23; buttons[2][4]=b24;
       buttons[3][0]=b30; buttons[3][1]=b31; buttons[3][2]=b32; buttons[3][3]=b33; buttons[3][4]=b34;
       buttons[4][0]=b40; buttons[4][1]=b41; buttons[4][2]=b42; buttons[4][3]=b43; buttons[4][4]=b44;
-      
+      m.getInstance().currentCountry().setSceneName("CCSurvivalH.fxml");
+      System.out.println( m.getInstance().currentCountry().getSceneName());
     }    
     
 }
