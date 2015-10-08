@@ -5,6 +5,7 @@
  */
 package colourcatcher;
 
+import colourcatcher.Model;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Random;

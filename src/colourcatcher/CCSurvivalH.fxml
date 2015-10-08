@@ -158,10 +158,9 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
-    <Label fx:id="life" font="$x1" layoutX="293.0" layoutY="17.0" prefWidth="14.9998779296875" text="1">
-      <labelFor>
-        
-      </labelFor>
-    </Label>
+    <Label fx:id="life" font="$x1" labelFor="$null" layoutX="293.0" layoutY="17.0" prefWidth="14.9998779296875" text="1" />
   </children>
+  <stylesheets>
+    <URL value="@../ccColourButtons.css" />
+  </stylesheets>
 </AnchorPane>
